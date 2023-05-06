@@ -1,0 +1,252 @@
+.skills {
+  background-color: #000;
+  padding: 80px 0;
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    
+    .skill-container {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #8bc34a;.skills {
+  background-color: #000;
+  padding: 80px 0;
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+
+    .skill-container {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #8bc34a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &:hover .skill-container {
+      background-color: #7cb342;
+    }
+    
+  }
+
+  /* Mobile Design */
+  @media screen and (max-width: 767px) {
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .skill-bubble {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 10px;
+      background-color: #f5e6ca;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .skill-bubble:before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      background-color: #c6d2ff;
+      border-radius: 50%;
+    }
+
+    .skill-bubble:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      width: 20px;
+      height: 20px;
+      background-color: #ffc6c6;
+      border-radius: 50%;
+    }
+
+    .skill-bubble p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #444444;
+      margin: 0;
+      padding: 0;
+    }
+
+    .progress-bar {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .progress {
+      position: absolute;
+      left: -100%;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #f5e6ca;
+      transform: skew(-45deg);
+      transform-origin: 0 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    li:hover .progress {
+      left: 0;
+    }
+  }
+
+  /* Desktop Design */
+  @media screen and (min-width: 768px) {
+    li {
+      margin: 0 40px;
+
+      .skill-container {
+        width: 200px;
+        height: 200px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  
+ 
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+  
+    .skill-bubble {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 10px;
+      background-color: #f5e6ca;
+      flex-wrap: wrap;
+    }
+  
+    .skill-bubble:before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      background-color: #c6d2ff;
+      border-radius: 50%;
+    }
+  
+    .skill-bubble:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      width: 20px;
+      height: 20px;
+      background-color: #ffc6c6;
+      border-radius: 50%;
+    }
+  
+    .skill-bubble p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #444444;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .progress-bar {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .progress {
+      position: absolute;
+      left: -100%;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #f5e6ca;
+      transform: skew(-45deg);
+      transform-origin: 0 0;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    li:hover .progress {
+      left: 0;
+    }
+  }
